@@ -21,14 +21,14 @@
 					<td style="width: 5%">STT</td>
 					<td style="width: 30%">Đào tạo học viên</td>
 					<td style="width: 30%">Định hướng nghiên cứu</td>
-					<td style="width: 35%">Nội dung</td>
 				</tr>
+				<c:forEach items="${canbo.lylichkhoahoc}" var="lylichkhoahoc">
 				<tr>
-					<td>1</td>
-					<td>${canbo.lylichkhoahoc.daotaohocvien}</td>
-					<td>${canbo.lylichkhoahoc.dinhhuongnghiencuu}</td>
-					<td>${canbo.lylichkhoahoc.lylichkhoahoccol}</td>
+					<td><%=i++ %></td>
+					<td>${lylichkhoahoc.daotaohocvien}</td>
+					<td>${lylichkhoahoc.dinhhuongnghiencuu}</td>
 				</tr>
+				</c:forEach>
 			</table>
 			<br /> <br />
 
